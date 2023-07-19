@@ -1,3 +1,9 @@
-A template for starting new projects. The SIAM folder  contains LaTeX Macros distributed by [SIAM](https://www.siam.org), and downloaded from their [Macros](https://www.siam.org/publications/journals/about-siam-journals/information-for-authors). To comply with their permissions, they are included here as a whole. 
+A template for starting new projects. The manuscript folder contains LaTeX templates
+from [SIAM](https://www.siam.org), and downloaded from their
+[Macros](https://www.siam.org/publications/journals/about-siam-journals/information-for-authors).
 
-In the starter Manuscript folder, there is also a copy of the most recent SIAM macro style, wiith an article starter that I use for my projects. In concrete projects, I delete the SIAM folder, which is not necessary for the compilation, as all necessary files for my project are in the Manuscript folder.
+In the starter Manuscript folder, there is also a copy of exemplary macros, with an
+article starter that I use for my projects. 
+
+If it is the first time you work with a git repository, you may want to have a look
+at the .gitignore file too, in the main folder.
