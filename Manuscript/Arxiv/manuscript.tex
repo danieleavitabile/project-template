@@ -1,9 +1,11 @@
 \documentclass[a4paper]{siamart190516}
 
 \usepackage{jdmacros}
+\usepackage{graphicx}
+\usepackage{lipsum}
 
 % Sets running headers as well as PDF title and authors
-\headers{Preliminary notes}{Jane Doe}
+\headers{Template for a paper}{Jane Doe}
 
 % Title. If the supplement option is on, then "Supplementary Material"
 % is automatically inserted before the title.
@@ -27,6 +29,8 @@
 % \and Jane E. Smith\footnotemark[3]
 }
 
+\graphicspath{{Figures/}}
+
 \begin{document}
 
 \maketitle
@@ -36,13 +40,13 @@
 \end{abstract}
 
 \section{Conventions} \label{sec:conventions}
-See \url{https://www.siam.org/Portals/0/Macros/Standard/docsiamart.pdf} for many examples. I generally adopt the conventions of
-that template. A few things are remarked below.
+For many instructive examples of how to use the SIAM latex text document, visit
+\url{https://www.siam.org/Portals/0/Macros/Standard/docsiamart.pdf}. A few things are remarked below.
 
 \subsection{References} \label{sec:references}
-These are random citations \cite{KoMa14,siam}. For cross-references I use
+These are random citations \cite{KoMa14,siam}. For cross-references one can use
 \texttt{cleveref}: like this
-\cref{eq:test}, like this \Cref{eq:test}, or like this \cref{sec:conventions}, or
+\cref{eq:test}, or this \Cref{eq:test}, or this \cref{sec:conventions}, or
 this \cref{hyp:trivial}, or this \cref{clm:trivial}.
 \begin{equation}\label{eq:test}
   x = y
@@ -54,7 +58,7 @@ You can find templates of other author's todos in
 \texttt{jdmacros.sty}, which you are welcome to edit.
 This is a short comment \jd{Short comment with my initials}. Longer comments can also go
 inline like the one below.
-\jd[inline]{Long comments by Daniele} 
+\jd[inline]{Long comments by this author} 
 % \missingfigure
 % 
 % \section*{Acknowledgments}
@@ -111,6 +115,15 @@ If one really must use calligraphic fonts, there are macros for this.
   \calM, \quad
   \calS, \quad
 \]
+
+\section{A lorem ipsum section}\label{sec:lorem} 
+\begin{figure}
+  \centering
+  \includegraphics{venn}
+  \caption{text}
+  \label{fig:label}
+\end{figure}
+\lipsum[1-10]
 
 
 \bibliographystyle{siamplain}
